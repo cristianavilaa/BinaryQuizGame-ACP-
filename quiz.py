@@ -34,4 +34,12 @@ while True:
 |                                         |
 |-----------------------------------------|
                                 """)
-                
+                uname = input("\nEnter Username : ")
+                passw = input("Enter Password : ")
+
+                log = "SELECT * FROM info WHERE username = ? and password = ?"
+                c.execute(log,(uname,passw))
+                if c.fetchall():
+                    while True:
+                        time.sleep(1)
+                        

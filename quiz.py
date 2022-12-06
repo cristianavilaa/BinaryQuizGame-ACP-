@@ -42,4 +42,15 @@ while True:
                 if c.fetchall():
                     while True:
                         time.sleep(1)
-                        
+ print("""\n|-----------------------------------------|
+|                                         |
+|                                         |
+|           [ 1 ] Play                    |
+|           [ 2 ] Profile                 |
+|           [ 3 ] Exit                    |
+|                                         |
+|                                         |
+|-----------------------------------------|
+                    """)
+                        pick1 = input("Enter Number : ")
+                        if pick1 == '1':                       
